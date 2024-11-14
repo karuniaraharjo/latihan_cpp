@@ -8,7 +8,7 @@ int main() {
   {
     int nilai;
 
-    cout << "Masukkan nilai ujian : ";
+    cout << "Masukkan nilai ujian (0-100) : ";
     cin >> nilai;
 
     if (nilai >= 85 && nilai <=100)
