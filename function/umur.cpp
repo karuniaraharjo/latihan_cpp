@@ -1,17 +1,23 @@
 #include <iostream>
 using namespace std;
 
-int umur(int tahun, int thnsekarang){
-    return 2024-tahun;
+int tahunskrg(){
+    time_t t = time(nullptr);
+    tm *const pTInfo = localtime(&t);
+  
+    int hasil= 1900 + pTInfo->tm_year;
+    return hasil;
+}
+
+int umur(int tahun){
+    return tahunskrg()-tahun;
 }
 
 int main(){
     system("cls");
-    int tahun_lahir,thnsekarang;
+    int tahun_lahir;
     cout << "Masukkan tahun lahir : ";
     cin >> tahun_lahir;
-    cout << "Masukkan tahun sekarang : ";
-    cin >> thnsekarang;
-    cout << "Umur kamu pada tahun "<< thnsekarang << " adalah " << umur(tahun_lahir,thnsekarang) << " Tahun";
+    cout << "Umur kamu pada tahun "<< tahunskrg() << " adalah " << umur(tahun_lahir) << " Tahun";
     return 0;
 }
