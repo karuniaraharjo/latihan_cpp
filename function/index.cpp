@@ -18,6 +18,10 @@ int pengurangan(int a, int b) {
     // Mengembalikan nilai a dikurangi b
     return a - b;
 }
+int pengurangan(int a) {
+    // Mengembalikan nilai a dikurangi b
+    return a;
+}
 
 // Fungsi pembagian() menerima 2 parameter a, b dengan type int
 float pembagian(int a, int b) {
@@ -59,12 +63,29 @@ string hari(int a) {
     }
 }
 
+float mean(float angka[]){
+    int length = 5;
+    float total = 0;
+    for (int i = 0; i < length; i++)
+    {
+        total += angka[i];
+    }
+    float rata = total/length;
+    return rata;
+}
+
 int main() {
+    system("cls");
+
     // Panggil Function hello
     hello();
 
+    string nama;
+    cout << "Siapa nama kamu ? ";
+    getline(cin,nama);
+
     // Panggil Function perkenalan dengan parameter "Karunia Raharjo"
-    perkenalan("Karunia Raharjo");
+    perkenalan(nama);
 
     // Panggil Function pengurangan dengan parameter 10 dan 6
     cout << "Hasil pengurangan dari 10 dan 6 adalah " << pengurangan(10, 6) << endl;
@@ -72,8 +93,14 @@ int main() {
     // Panggil Function pembagian dengan parameter 10 dan 5
     cout << "Hasil pembagian dari 10 dan 5 adalah " << pembagian(10, 5) << endl;
 
+    int date;
+    cout << "Masukkan hari dalam angka (1-7) : ";
+    cin >> date;
     // Panggil Function hari dengan parameter 4
-    cout << "Hari ke 4 adalah hari " << hari(4) << endl;
+    cout << "Hari ke "<< date <<" adalah hari " << hari(date) << endl;
+
+    float a[] = {87,64,95,82,93};
+    cout << "Rata-rata : " << mean(a) << endl;
     
     return 0;
 }
