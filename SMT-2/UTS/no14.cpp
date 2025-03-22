@@ -1,3 +1,4 @@
+//input jumlah baris & kolom - deklarasi array
 #include <iostream>
 #include <iomanip> // Untuk setprecision
 using namespace std;

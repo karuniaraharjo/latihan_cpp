@@ -1,3 +1,4 @@
+//masukkan tinggi segitiga
 #include <iostream>
 using namespace std;
 

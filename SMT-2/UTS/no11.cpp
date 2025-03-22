@@ -1,3 +1,4 @@
+//masukkan panjang array & deklarasi & input array
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -9,6 +10,7 @@ int main() {
     cout << "Masukkan panjang array: ";
     cin >> panjangArray;
 
+    //deklarasi
     int array1D[panjangArray];
 
     // Memasukkan elemen array

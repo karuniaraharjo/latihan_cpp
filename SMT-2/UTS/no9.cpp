@@ -1,3 +1,4 @@
+// masukkan jumlah siswa & mapel & deklarasi array
 #include <iostream>
 using namespace std;
 
@@ -25,11 +26,12 @@ int main() {
     // Menghitung dan menampilkan rata-rata nilai per siswa
     cout << "\nRata-rata per siswa:" << endl;
     for (int i = 0; i < jumlahSiswa; i++) {
-        double total = 0;
-        for (int j = 0; j < jumlahMapel; j++) {
+        float total = 0;
+        for (int j = 0; j < jumlahMapel; j++) { // hitung total
             total += nilai[i][j];
         }
-        double rataRata = total / jumlahMapel;
+
+        float rataRata = total / jumlahMapel; // hitung rata-rata
         cout << "Siswa " << i + 1 << ": " << rataRata << endl;
     }
 

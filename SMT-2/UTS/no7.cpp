@@ -1,3 +1,4 @@
+// masukkan panjang, lebar, tinggi & tampilkan luas&volume
 #include <iostream>
 using namespace std;
 

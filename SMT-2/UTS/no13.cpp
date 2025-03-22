@@ -1,3 +1,4 @@
+//input jumlah baris & kolom - deklarasi array
 #include <iostream>
 using namespace std;
 

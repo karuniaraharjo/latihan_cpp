@@ -1,3 +1,4 @@
+//masukkan tinggi piramida
 #include <iostream>
 using namespace std;
 
@@ -6,7 +7,7 @@ int main() {
     cout << "Masukkan tinggi piramida: ";
     cin >> N;
 
-    for (int i = 1; i <= N; i++) {
+    for (int i = 1; i <= N; i++) { // cetak baris
         // Bagian angka menaik
         for (int j = 1; j <= i; j++) {
             cout << j << " ";
