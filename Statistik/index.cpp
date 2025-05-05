@@ -7,7 +7,7 @@ using namespace std;
 
 int main() {
     const int TOTAL_NUMBERS = 1000000; // Jumlah data yang akan di-generate
-    const string FILE_NAME = "random_numbers.csv"; // Nama file output
+    const string FILE_NAME = "angka_acak.csv"; // Nama file output
     
     ofstream file(FILE_NAME); // Membuka file untuk ditulis
 
@@ -18,7 +18,7 @@ int main() {
 
     srand(time(0)); // Seed untuk angka acak
 
-    file << "Number\n"; // Header untuk file CSV
+    file << "Angka\n"; // Header untuk file CSV
 
     for (int i = 0; i < TOTAL_NUMBERS; i++) {
         int randomNumber = rand(); // Menghasilkan angka acak

@@ -1,12 +1,13 @@
 // Kita memiliki data mahasiswa yang disimpan dalam array mhs[].
-// Kemudian dilakukan pencarian mahasiswa berdasarkan nama dengan metode sequential search.
+// Kemudian kita ingin melakukan pencarian mahasiswa berdasarkan nama dengan metode sequential search.
 #include <iostream>
 using namespace std;
 
 int main() {
     string mhs[] = {"Adhysta", "Rangga", "Azka", "Arun", "Inggil", "Hamdi", "Fauzi", "Ali"};
-    int size = sizeof(mhs)/sizeof(mhs[0]);
-    string target;
+
+    int size = sizeof(mhs)/sizeof(mhs[0]); // ukuran array
+    string target; // data yang dicari
 
     cout << "=== Sequential Search ===" << endl;
     cout << "Cari nama mahasiswa : ";
